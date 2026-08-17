@@ -1,0 +1,18 @@
+﻿using MoneyTransfer.Basic.Console;
+
+try
+{
+    MoneyTransferService.Transfer(
+        fromAccountNumber: "1001",
+        toAccountNumber: "1002",
+        amount: 250m);
+
+    Console.WriteLine(
+        "Overføringen ble gjennomført.");
+}
+catch (Exception exception)
+{
+    Console.WriteLine(
+        $"Overføringen feilet: {exception.Message}");
+}
+
