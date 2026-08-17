@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="MoneyTransfer.API/MoneyTransfer.API.csproj" />
   <Project Path="MoneyTransfer.Basic.Console/MoneyTransfer.Basic.Console.csproj" />
   <Project Path="MoneyTransfer.DI.Console/MoneyTransfer.DI.Console.csproj" />
 </Solution>
