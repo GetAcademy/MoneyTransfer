@@ -5,6 +5,7 @@
   <Folder Name="/Step 2/">
     <Project Path="MoneyTransfer.DI.Console/MoneyTransfer.DI.Console.csproj" />
   </Folder>
-  <Folder Name="/Step 3/" />
-  <Project Path="MoneyTransfer.API/MoneyTransfer.API.csproj" />
+  <Folder Name="/Step 3/">
+    <Project Path="MoneyTransfer.API/MoneyTransfer.API.csproj" />
+  </Folder>
 </Solution>
