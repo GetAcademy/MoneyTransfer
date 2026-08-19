@@ -1,0 +1,13 @@
+###
+
+
+@baseUrl = http://localhost:5258
+
+POST {{baseUrl}}/transfer
+Content-Type: application/json
+
+{
+  "fromAccountNo": "1001",
+  "toAccountNo": "1002",
+  "amount": 5000
+}
