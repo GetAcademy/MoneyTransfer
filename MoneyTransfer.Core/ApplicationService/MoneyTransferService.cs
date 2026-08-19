@@ -42,8 +42,10 @@ namespace MoneyTransfer.Core.ApplicationService
                     "Det er ikke nok penger på kontoen.");
             }
 
-            fromAccount.Balance -= amount;
-            toAccount.Balance += amount;
+            fromAccount.Withdraw(amount);
+            toAccount.Deposit(amount);
+            //fromAccount.Balance -= amount;
+            //toAccount.Balance += amount;
 
             _accountRepository.CreateOrUpdate(fromAccount);
             _accountRepository.CreateOrUpdate(toAccount);

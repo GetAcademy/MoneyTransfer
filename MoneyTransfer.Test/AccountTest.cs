@@ -1,12 +1,7 @@
 ﻿namespace MoneyTransfer.Test
 {
-    public class Tests
+    public class AccountTest
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void Test1()
         {
