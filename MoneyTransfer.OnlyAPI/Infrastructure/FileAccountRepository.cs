@@ -1,4 +1,6 @@
 ﻿using System.Text.Json;
+using MoneyTransfer.Core.DomainModel;
+using MoneyTransfer.Core.DomainServices;
 
 namespace MoneyTransfer.OnlyAPI.Infrastructure
 {

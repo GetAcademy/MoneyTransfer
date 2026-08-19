@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MoneyTransfer.Core\MoneyTransfer.Core.csproj" />
+  </ItemGroup>
+
 </Project>
