@@ -41,5 +41,33 @@ namespace MoneyTransfer.Test
             Assert.That(accountA.Balance, Is.EqualTo(200));
             Assert.That(accountB.Balance, Is.EqualTo(0));
         }
+
+        [Test]
+        public void TestNonExistantAccount()
+        {
+            // arrange = forberede, sette opp alt
+            var repo = new FakeAccountRepository();
+            var service = new MoneyTransferService(repo);
+
+            // act = gjøre det som skal testes
+            var exception = Assert.Throws<InvalidOperationException>(() => service.Transfer("1", "2", 500));
+
+            // Assert against the exception properties
+            Assert.That(exception.Message, Is.EqualTo("Kunne ikke lese konto."));
+        }
+
+        [Test]
+        public void TestNegativeAmount()
+        {
+            // arrange = forberede, sette opp alt
+            var repo = new FakeAccountRepository();
+            var service = new MoneyTransferService(repo);
+
+            // act = gjøre det som skal testes
+            var exception = Assert.Throws<ArgumentException>(() => service.Transfer("1", "2", -500));
+
+            // Assert against the exception properties
+            Assert.That(exception.Message, Is.EqualTo("Beløpet må være større enn null."));
+        }
     }
 }
