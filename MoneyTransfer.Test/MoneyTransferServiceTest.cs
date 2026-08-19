@@ -23,5 +23,23 @@ namespace MoneyTransfer.Test
             Assert.That(accountA.Balance, Is.EqualTo(200));
             Assert.That(accountB.Balance, Is.EqualTo(500));
         }
+
+        [Test]
+        public void TestTransferWithoutEnoughMoney()
+        {
+            // arrange = forberede, sette opp alt
+            var accountA = new Account { AccountNumber = "1" };
+            var accountB = new Account { AccountNumber = "2" };
+            accountA.Deposit(200);
+            var repo = new FakeAccountRepository(accountA, accountB);
+            var service = new MoneyTransferService(repo);
+
+            // act = gjøre det som skal testes
+            Assert.Throws<InvalidOperationException>(() => service.Transfer("1", "2", 500));
+
+            // assert = sjekke om det gikk som det skulle
+            Assert.That(accountA.Balance, Is.EqualTo(200));
+            Assert.That(accountB.Balance, Is.EqualTo(0));
+        }
     }
 }
