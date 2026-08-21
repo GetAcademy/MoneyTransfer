@@ -2,7 +2,7 @@
 using MoneyTransfer.Core.DomainModel;
 using MoneyTransfer.Core.DomainServices;
 
-namespace MoneyTransfer.OnlyApiAndInfrastructure.Infrastructure
+namespace MoneyTransfer.Infrastructure
 {
     public class FileAccountRepository : IAccountRepository
     {

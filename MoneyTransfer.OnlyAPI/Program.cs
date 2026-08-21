@@ -1,7 +1,7 @@
 using MoneyTransfer.API.DTO;
 using MoneyTransfer.Core.ApplicationService;
 using MoneyTransfer.Core.DomainServices;
-using MoneyTransfer.OnlyApiAndInfrastructure.Infrastructure;
+using MoneyTransfer.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IAccountRepository, FileAccountRepository>();
