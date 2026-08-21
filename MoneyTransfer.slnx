@@ -10,7 +10,7 @@
   </Folder>
   <Folder Name="/Step 4/">
     <Project Path="MoneyTransfer.Core/MoneyTransfer.Core.csproj" Id="15049c09-499b-4696-aec0-a28b55814faa" />
-    <Project Path="MoneyTransfer.OnlyAPI/MoneyTransfer.OnlyAPI.csproj" Id="cc9673a4-22dd-45fd-8dd0-c5b78fa2a9a3" />
+    <Project Path="MoneyTransfer.OnlyAPI/MoneyTransfer.OnlyApiAndInfrastructure.csproj" Id="cc9673a4-22dd-45fd-8dd0-c5b78fa2a9a3" />
     <Project Path="MoneyTransfer.Test/MoneyTransfer.Test.csproj" Id="5bbb7a33-2a26-4df9-b513-13a699a13ccc" />
   </Folder>
 </Solution>
