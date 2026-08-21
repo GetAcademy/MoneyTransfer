@@ -1,4 +1,4 @@
-﻿namespace MoneyTransfer.OnlyApiAndInfrastructure.DTO
+﻿namespace MoneyTransfer.API.DTO
 {
     public class TransferMoneyRequest
     {

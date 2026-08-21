@@ -4,7 +4,7 @@ using MoneyTransfer.Core.DomainServices;
 
 namespace MoneyTransfer.OnlyApiAndInfrastructure.Infrastructure
 {
-    internal class FileAccountRepository : IAccountRepository
+    public class FileAccountRepository : IAccountRepository
     {
         public Account? Get(string accountNo)
         {

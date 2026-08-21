@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MoneyTransfer.Core\MoneyTransfer.Core.csproj" />
+    <ProjectReference Include="..\MoneyTransfer.Infrastructure\MoneyTransfer.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
+using MoneyTransfer.API.DTO;
 using MoneyTransfer.Core.ApplicationService;
 using MoneyTransfer.Core.DomainServices;
-using MoneyTransfer.OnlyApiAndInfrastructure.DTO;
 using MoneyTransfer.OnlyApiAndInfrastructure.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
